@@ -1,3 +1,4 @@
+//Aurhor: Ryan Hoofard
 #include<iostream>
 #include<string>
 using namespace std;
@@ -14,6 +15,14 @@ int main()
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
-
+do {
+  cout<<"\n==GROCERY LIST MANAGER==";
+  cout<<"\nEnter your choice: ";
+  cout<<"\n (A)dd an item";
+  cout<<"\n (Q)uit";
+  cout<<"\nYour choice (A/Q): ";
+  cin>>input;
+}
+while (input != 'Q');
   return 0;
 }
