@@ -17,7 +17,7 @@ string item;
  cout<<"\nYour choice (A/Q): ";
  cin>>input;
 do{
-cout<<"What is your item?"<<endl;
+cout<<"What is the item?"<<endl;
 cin>>item;
 numItems = numItems+1;
  
@@ -29,7 +29,7 @@ numItems = numItems+1;
  cin>>input;
 
 }
- while ((input == 'A' || input == 'a')&& numItems < 6 );
+ while ((input == 'A' || input == 'a')&& numItems < 7 );
 
 cout<<"You'll need a bigger list!"<<endl;
 
