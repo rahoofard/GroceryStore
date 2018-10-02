@@ -16,7 +16,7 @@ int main()
                 cout<<"\n==GROCERY LIST MANAGER==";
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
-                cout<<"\n (Q)uit"<<endl;
+                cout<<"\n (Q)uit";
                 cout<<"\nYour choice (A/Q): ";
                 cin>>input;
                 if (numItems< 5){
@@ -35,7 +35,8 @@ int main()
         }
         while (input != 'Q' && input != 'q');
         cout<<"Your choice (A/B): ==ITEMS TO BUY=="<<endl;
-        cout<<"1 " <<list[0]<<endl;
+        
+        cout<<"\n1 " <<list[0]<<endl;
         cout<<"2 " <<list[1]<<endl;
         cout<<"3 " <<list[2]<<endl;
         cout<<"4 " <<list[3]<<endl;
