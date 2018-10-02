@@ -5,50 +5,61 @@ using namespace std;
 
 int main()
 {
-  string list[5]; //array of 5 strings
-  int numItems = 0;
-char input;
-string item;
+        string list[5]; //array of 5 strings
+        int numItems = 0;
+        char input;
+        string item;
+        int newItems = 0;
+        string listItem;   
+        do{
 
-   
-do{
+                cout<<"\n==GROCERY LIST MANAGER==";
+                cout<<"\nEnter your choice: ";
+                cout<<"\n (A)dd an item";
+                cout<<"\n (Q)uit";
+                cout<<"\nYour choice (A/Q): ";
+                cin>>input;
+                if (numItems< 5){
+                        if (input == 'a' || input == 'A'){
+                                cout<<"\n==GROCERY LIST MANAGER==";
+                                cout<<"\nEnter your choice: ";
+                                cout<<"\n (A)dd an item";
+                                cout<<"\n (Q)uit";
+                                cout<<"Your choice (A/Q):"<<endl;
 
-  cout<<"\n==GROCERY LIST MANAGER==";
-  cout<<"\nEnter your choice: ";
- cout<<"\n (A)dd an item";
-  cout<<"\n (Q)uit";
- cout<<"\nYour choice (A/Q): ";
-cin>>input;
-if (numItems< 5){
-    if (input == 'a' || input == 'A'){
+                                cout<<"What is the item?"<<endl;
+                                cin>>item;
+                                numItems = numItems+1;
+                                if (newItems< 5){
+                                        list[newItems] = item;
+                                        
 
-  cout<<"\n==GROCERY LIST MANAGER==";
-  cout<<"\nEnter your choice: ";
- cout<<"\n (A)dd an item";
-  cout<<"\n (Q)uit";
- cout<<"Your choice (A/Q):"<<endl;
- 
-cout<<"What is the item?"<<endl;
-cin>>item;
-numItems = numItems+1;
-     
+                                        newItems++;
 
-}}
-else { 
-cout<<"You'll neeed a bigger list"<<endl;
+
+                                }}}
+                else { 
+                        cout<<"You'll neeed a bigger list"<<endl;
+                }
+        }
+        while (input != 'Q' && input != 'q');
+        cout<<"\n==ITEMS TO BUY==";
+        cout<<"\n 1 " <<list[0]<<endl;
+        cout<<"\n 2 " <<list[1]<<endl;
+        cout<<"\n 3 " <<list[2]<<endl;
+        cout<<"\n 4 " <<list[3]<<endl;
+        cout<<"\n 5 " <<list[4]<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
+        return 0;
 }
-}
- while (input != 'Q' && input != 'q');
-
-
-
-
-
-
-
-
-    
-  
-
-return 0;
- }
