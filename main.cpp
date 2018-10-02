@@ -32,11 +32,7 @@ int main()
                                 numItems = numItems+1;
                                 if (newItems< 5){
                                         list[newItems] = item;
-                                        
-
                                         newItems++;
-
-
                                 }}}
                 else { 
                         cout<<"You'll neeed a bigger list"<<endl;
@@ -49,17 +45,6 @@ int main()
         cout<<"\n 3 " <<list[2]<<endl;
         cout<<"\n 4 " <<list[3]<<endl;
         cout<<"\n 5 " <<list[4]<<endl;
-
-
-
-
-
-
-
-
-
-
-
 
         return 0;
 }
