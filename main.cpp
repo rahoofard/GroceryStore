@@ -21,6 +21,7 @@ int main()
                 cin>>input;
                 if (numItems< 5){
                         if (input == 'a' || input == 'A'){
+                              
                                 cout<<"\nYour choice (A/Q): What is the item?"<<endl;
                                 cin>>item;
                                 numItems = numItems+1;
