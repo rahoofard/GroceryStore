@@ -16,15 +16,11 @@ int main()
                 cout<<"\n==GROCERY LIST MANAGER==";
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
-                cout<<"\n (Q)uit";
-                cout<<"\nYour choice (A/Q): ";
+                cout<<"\n (Q)uit"<<endl;
+               // cout<<"\nYour choice (A/Q): ";
                 cin>>input;
                 if (numItems< 5){
                         if (input == 'a' || input == 'A'){
-                                cout<<"\n==GROCERY LIST MANAGER==";
-                                cout<<"\nEnter your choice: ";
-                                cout<<"\n (A)dd an item";
-                                cout<<"(Q)uit"<<endl;
                                 cout<<"Your choice (A/Q): What is the item?"<<endl;
                                 cin>>item;
                                 numItems = numItems+1;
