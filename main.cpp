@@ -17,7 +17,7 @@ int main()
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
                 cout<<"\n (Q)uit"<<endl;
-               // cout<<"\nYour choice (A/Q): ";
+                cout<<"\nYour choice (A/Q): ";
                 cin>>input;
                 if (numItems< 5){
                         if (input == 'a' || input == 'A'){
@@ -33,7 +33,7 @@ int main()
                 }
         }
         while (input != 'Q' && input != 'q');
-        cout<<"==ITEMS TO BUY=="<<endl;
+        cout<<"Your choice (A/B): ==ITEMS TO BUY=="<<endl;
         cout<<"1 " <<list[0]<<endl;
         cout<<"2 " <<list[1]<<endl;
         cout<<"3 " <<list[2]<<endl;
