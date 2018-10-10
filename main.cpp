@@ -30,10 +30,11 @@ if(list.size()>0){
                                         list.push_back (item);
                                                                      }
                 if((input== 'd'|| input == 'D') && list.size()>0 ){
-                      list.pop_back();
-                       cout<<item<<" was deleted from the list."<<endl;
                         item= list[list.size()-1];
-                       }
+
+                    list.pop_back();
+                       cout<<item<<" was deleted from the list."<<endl;
+                                           }
  
 
                }
