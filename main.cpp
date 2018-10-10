@@ -19,7 +19,7 @@ if(list.size()>0){
                 cout<<"\n (A)dd an item";
                 cout<<"\n (D)elete last item";
                 cout<<"\n (Q)uit";
-                cout<<"\nYour choice (A/Q): ";
+                cout<<"\nYour choice (A/Q): ==ITEMS TO BUY=="<<endl;
                 cin>>input;
                                        if (input == 'a' || input == 'A'){
                               
@@ -43,7 +43,7 @@ if(list.size()>0){
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
                 cout<<"\n (Q)uit";
-                cout<<"\nYour choice (A/Q): ==ITEMS TO BUY==";
+                cout<<"\nYour choice (A/Q): ";
                 cin>>input;
 
                         if (input == 'a' || input == 'A'){
