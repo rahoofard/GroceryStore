@@ -1,11 +1,12 @@
 //Aurhor: Ryan Hoofard
 #include<iostream>
 #include<string>
+#include<vector>
 using namespace std;
 
 int main()
 {
-        string list[5]; //array of 5 strings
+      vector <string> list; //array of 5 strings
         int numItems = 0;
         char input;
         string item;
@@ -16,31 +17,32 @@ int main()
                 cout<<"\n==GROCERY LIST MANAGER==";
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
+                cout<<"\n (D)elete last item";
                 cout<<"\n (Q)uit"<<endl;
                 cout<<"\nYour choice (A/Q): ";
                 cin>>input;
-                if (numItems< 5){
+                
                         if (input == 'a' || input == 'A'){
                               
                                 cout<<"\nYour choice (A/Q): What is the item?"<<endl;
                                 cin>>item;
-                                numItems = numItems+1;
-                                if (newItems< 5){
-                                        list[newItems] = item;
-                                        newItems++;
-                                }}}
-                else { 
-                        cout<<"You'll neeed a bigger list"<<endl;
-                }
+                                
+                        
+                                        list.push_back (item);
+                                                                     }
+                if(input== 'd'|| input == 'D' && list.size()>0){
+                      list.pop_back();
+                       cout<<item<<" was deleted from the list."<<endl;
+
+                       }
+                   
         }
         while (input != 'Q' && input != 'q');
         cout<<"Your choice (A/B): ==ITEMS TO BUY=="<<endl;
         
-        cout<<"\n1 " <<list[0]<<endl;
-        cout<<"2 " <<list[1]<<endl;
-        cout<<"3 " <<list[2]<<endl;
-        cout<<"4 " <<list[3]<<endl;
-        cout<<"5 " <<list[4]<<endl;
+        for(int index=0; index< list.size(); index++){
+        cout<<index+1<<" "<<list[index]<<endl;
+ }
 
         return 0;
 }
