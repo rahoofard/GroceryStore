@@ -13,7 +13,7 @@ int main()
         int newItems = 0;
         string listItem;   
         do{
-
+if(list.size()>0){
                 cout<<"\n==GROCERY LIST MANAGER==";
                 cout<<"\nEnter your choice: ";
                 cout<<"\n (A)dd an item";
@@ -21,7 +21,16 @@ int main()
                 cout<<"\n (Q)uit"<<endl;
                 cout<<"\nYour choice (A/Q): ";
                 cin>>input;
-                
+                }
+                else{
+                cout<<"\n==GROCERY LIST MANAGER==";
+                cout<<"\nEnter your choice: ";
+                cout<<"\n (A)dd an item";
+                cout<<"\n (Q)uit"<<endl;
+                cout<<"\nYour choice (A/Q): ";
+                cin>>input;
+
+}
                         if (input == 'a' || input == 'A'){
                               
                                 cout<<"\nYour choice (A/Q): What is the item?"<<endl;
@@ -38,11 +47,15 @@ int main()
                    
         }
         while (input != 'Q' && input != 'q');
-        cout<<"Your choice (A/B): ==ITEMS TO BUY=="<<endl;
+ if(list.size()>0){
         
         for(int index=0; index< list.size(); index++){
+        
         cout<<index+1<<" "<<list[index]<<endl;
- }
+}
+}else{
+cout<<"No items to buy!"<<endl;
+}
 
         return 0;
 }
