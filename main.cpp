@@ -23,7 +23,7 @@ if(list.size()>0){
                 cin>>input;
                                        if (input == 'a' || input == 'A'){
                               
-                                cout<<"\nYour choice (A/Q): What is the item?"<<endl;
+                                cout<<"What is the item?"<<endl;
                                 cin>>item;
                                 
                         
@@ -48,7 +48,7 @@ if(list.size()>0){
 
                         if (input == 'a' || input == 'A'){
                               
-                                cout<<"\nYour choice (A/Q): What is the item?"<<endl;
+                                cout<<"What is the item?"<<endl;
                                 cin>>item;
                                 
                         
